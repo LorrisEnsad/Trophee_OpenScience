@@ -1,2 +1,142 @@
-# Trophee_OpenScience
-Projet de fabrication des trophées du prix Open Science (2022)
+# Ouvrir la Science
+
+Le projet Ouvrir la Science est un prix à l'initiative  du Ministère de l'Enseignement Supérieur et de la Recherche. Il consiste à récompenser les chercheur·euses français·es qui publient librement leurs outils numérique.  Pour sa première édition,  les trophées remis aux lauréats on été conçus par quatre étudiant·es de l'école des Arts Décoratifs de Paris :  Alix Nadeau, Lorris Sahli, Rose Vidal et Hugo Bijaoui.
+
+https://user-images.githubusercontent.com/106762643/228660883-8d30bfee-2681-4922-8bea-3df94b5a8ea7.mp4
+
+
+Cette documentation concerne l'élaboration et la fabrication des trophées de ce prix. 
+
+Ce document `Readme.md` concerne la dimension numérique du trophée et le détail des programme nécessaire à sa conception. 
+
+Le fichier `Process_A_a_Z.pdf` présent sur le répertoire se concentre sur la fabrcation plastique des trophées. Nous vous invitons à le consulter pour tout renseignements sur cet aspect de la récompense.
+
+
+
+## Le programme
+
+L'objectif de ce programme est de générer une sphère composée $n$ éléments à partir de $n$ *string*s (chaînes de caractères), ainsi que des fichiers aidant à sa fabrication. 
+
+#### Cahier des charges
+
+Pour que le programme génère correctement les trophées, il faut valider les conditions suivantes : 
+
+* Pour une même entrée, les formes de sortie doivent être les mêmes.
+
+* Les formes générées doivent respecter l'esthétique arborescente définie lors de la phase de recherche du projet. 
+
+* Une forme composant la sphère ne peut pas chevaucher ses formes adjacentes (par conséquent, une forme de la sphère n'est pas indépendante des autres)
+
+* La sortie doit permettre la prévisualisation de la sphère en 3D
+
+* La sortie doit contenir les formes 2D, qui une fois 'cintrée' donne les formes en 3D qui composent la sphère; dans un format SVG permettant leur découpe. 
+  
+  
+
+# Guide d'utilisation
+
+### Exemple : L'édition 2022
+
+Voici un exemple d'utilisation du programme, utilisant les description des lauréats de l'édition 2022 du prix. 
+
+#### Entrée
+
+L'entrée est une liste de *string*, entrée par l'utilisateur dans l'invité de commande lors de l'éxécution du programme, ou alors définie dans la variable `descriptifs_projets` du fichier `Trophee_generator.py`.
+
+```
+Evolution des différents zonages de la troisième République
+Corpus de débats parlementaires français, allemands et britanniques 
+EMM, Ethnic and Migrant Minority Survey Registry
+NORINE, BD de peptides non-ribosomiques et outils pour leur analyse et visualisation
+MOBILISCOPE, cartes et graphiques interactifs de visualisation des variations de la population
+Prospection d’Amathonte, site archéologique de l’île de Chypre fouillé par une mission française
+MouseTube, enregistrements de vocalisations de souris
+YAGO, base de connaissances
+```
+
+#### Sortie
+
+![blender](https://user-images.githubusercontent.com/106762643/229172800-c11b3d97-d17b-4f35-87dd-5ebfa8c97bb7.png)
+
+
+![SVG_trophee_donnee_de_la_recherhce](https://user-images.githubusercontent.com/106762643/229146287-8bb658ad-0964-492f-a03f-125e13ec8a68.svg)
+
+
+#### Résultat
+![ex_2022](https://user-images.githubusercontent.com/106762643/229134182-b1b76b57-86cd-4383-b1bc-15f95383ce93.png)
+
+
+### Linux
+
+Il exsite une version *pseudo compilée* (*pseudo* puisque si certaines parties sont effectivement compilée, d'autre sont interprétées depuis l'environnement python lié à la version portable de Blender, incluse). 
+
+### Windows et MacOS
+
+#### Pré-requis logiciel
+
+Il est nécessaire d'avoir installé au préalable :
+
+* Blender (version 3.2.0, non testé sur d'autres versions )
+
+* Python 3.10.4 ou ultérieur 
+  
+  et les bibliothèques suivantes : 
+  
+  * Numpy
+  
+  * pygame
+  
+  * drawSVG
+
+#### Marche à suivre
+
+* Ouvrir Blender
+
+*  Se rendre dans son onglet *script*ing, ouvrir et éxécuter le fichier `Trophee_generator.py` . 
+  
+  Sont générés les fichiers `Tophee.txt` et `Trophee_3D_preview.png`.
+
+* S'assurer que `2D_view_generator.py` et `Trophee.txt` sont dans le même répertoire et éxécuter `python 2D_view_generator.py`.
+  
+  Sont générés les fichiers `Trophee_2D_view.png` et `Trophee_SVG.svg`
+
+
+
+# Structure du programme
+
+Programmé en python, le programme utilise Blender et son API Python, ainsi que les bibliothèques numpy, pygame et drawSVG.Il se décompose en deux sous-programme.
+Le premier `Trophee_generator.py` génère les trophées selon les contraintes du cahier des charges, et construit une scène Blender permettant leur prévisualisation en 3D.
+Le Second `2D_view_generator.py` reprojette les formes 3D sur un plan 2D, et les enrichie pour générer le fichier SVG nécessaire à leur découpe. 
+
+### Représentation d'un trophée dans l'implémentation
+
+### Algorithme de génération 
+
+### Préparation à la prévisualisation 3D
+
+## Préparation du fichier SVG de découpe
+
+# Limites et pistes d'améliorations
+
+Cette première version du programme, bien qu'utilisée pour l'édition 2022 prix Ouvrir la Science, reste à l'état de protoptype. Elle contient donc de nombreuses limites. Nous vous invitons à en prendre connaissance.
+
+## Limite Algorithmique
+
+La fonction récusrsive avec RNG. Comment faire autrement ? Imaginer un mapping de la sphère sur que les trophee viendrait remplir ?
+
+Imaginer un algorithme de génération des formes plus flexibles permettant des résultats plus variés 
+
+## Interface
+
+Interface graphique et prévisualisation du résultat en 3D, en temps réel
+
+Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender, materials, présence des socles, ect...)
+
+## Documentation
+Documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et l'efficacité de l'implémentation.
+
+
+  
+  
+
+
