@@ -11,8 +11,6 @@ Ce document `Readme.md` concerne la dimension numérique du trophée et le déta
 
 Le fichier `Process_A_a_Z.pdf` présent sur le répertoire se concentre sur la fabrcation plastique des trophées. Nous vous invitons à le consulter pour tout renseignements sur cet aspect de la récompense.
 
-
-
 ## Le programme
 
 L'objectif de ce programme est de générer une sphère composée $n$ éléments à partir de $n$ *string*s (chaînes de caractères), ainsi que des fichiers aidant à sa fabrication. 
@@ -30,8 +28,6 @@ Pour que le programme génère correctement les trophées, il faut valider les c
 * La sortie doit permettre la prévisualisation de la sphère en 3D
 
 * La sortie doit contenir les formes 2D, qui une fois 'cintrée' donne les formes en 3D qui composent la sphère; dans un format SVG permettant leur découpe. 
-  
-  
 
 # Guide d'utilisation
 
@@ -56,6 +52,8 @@ YAGO, base de connaissances
 
 #### Sortie
 
+#### Sortie
+
 ![blender](https://user-images.githubusercontent.com/106762643/229172800-c11b3d97-d17b-4f35-87dd-5ebfa8c97bb7.png)
 
 
@@ -65,6 +63,10 @@ YAGO, base de connaissances
 #### Résultat
 ![ex_2022](https://user-images.githubusercontent.com/106762643/229134182-b1b76b57-86cd-4383-b1bc-15f95383ce93.png)
 
+
+#### Résultat
+
+![](/run/media/lorris/3133-6132/LAN/OpenScience/ex_2022.png)
 
 ### Linux
 
@@ -92,7 +94,7 @@ Il est nécessaire d'avoir installé au préalable :
 
 * Ouvrir Blender
 
-*  Se rendre dans son onglet *script*ing, ouvrir et éxécuter le fichier `Trophee_generator.py` . 
+* Se rendre dans son onglet *script*ing, ouvrir et éxécuter le fichier `Trophee_generator.py` . 
   
   Sont générés les fichiers `Tophee.txt` et `Trophee_3D_preview.png`.
 
@@ -100,43 +102,70 @@ Il est nécessaire d'avoir installé au préalable :
   
   Sont générés les fichiers `Trophee_2D_view.png` et `Trophee_SVG.svg`
 
-
-
 # Structure du programme
 
-Programmé en python, le programme utilise Blender et son API Python, ainsi que les bibliothèques numpy, pygame et drawSVG.Il se décompose en deux sous-programme.
+Programmé en python, le programme utilise Blender et son API Python, ainsi que les bibliothèques numpy, pygame et drawSVG. Il se décompose en deux sous-programme.
 Le premier `Trophee_generator.py` génère les trophées selon les contraintes du cahier des charges, et construit une scène Blender permettant leur prévisualisation en 3D.
-Le Second `2D_view_generator.py` reprojette les formes 3D sur un plan 2D, et les enrichie pour générer le fichier SVG nécessaire à leur découpe. 
+Le Second `2D_view_generator.py` reprojette les formes 3D sur un plan 2D, puis génére le fichier SVG nécessaire à leur découpe. 
 
 ### Représentation d'un trophée dans l'implémentation
 
-### Algorithme de génération 
+Un trophée est un $m$-uplet de branches ordonnées. Une branche est un quintuplet $(n,o,a,b,c) \in$ $\N \times (\bigcup_{i\in \N} \{ (-1)^{i}ie_{branche}\} \times \{0\} \times \{0\}) \times \R³ \times \R³ \times \R³$  avec $e_{branche} \in \R^{+*}$ un paramètre de l'algorithme représentant l'espace entre deux branches. 
+
+- $n$ est le numéro de la branche 
+
+- $o$ est l'origine de la branche tel que $o=((-1)^n ne_{branche},0,0)$
+
+- $a$ est la position dans l'espace du premier coude de la branche
+
+- $b$ est la position dans l'espace du second coude de la branche
+
+- $c$ est la position de la fin de la branche
+
+Autrement dit, chaque trophée est composé de plusieurs branches. Une branche est toujours composée de trois segments.
+
+### Algorithme de génération
+
+Les longeur de chaque segments de chaque branche sont généré à partir d'un aléatoire dont la *seed* est déterminée par 
+
+Le trophée est d'abord généré sur un plan. Par définition, $n$ et $o$ sont prédéterminés pour chaque branche. 
 
 ### Préparation à la prévisualisation 3D
+
+## Format d'exportation des trophées
 
 ## Préparation du fichier SVG de découpe
 
 # Limites et pistes d'améliorations
 
-Cette première version du programme, bien qu'utilisée pour l'édition 2022 prix Ouvrir la Science, reste à l'état de protoptype. Elle contient donc de nombreuses limites. Nous vous invitons à en prendre connaissance.
+Cette première version du programme, bien qu'utilisée pour l'édition 2022 prix Ouvrir la Science, reste à l'état de protoptype. Elle contient donc de nombreuses limites. Nous vous invitons à en prendre connaissance avant toute utilisation.
 
-## Limite Algorithmique
+### Algorithme
 
 La fonction récusrsive avec RNG. Comment faire autrement ? Imaginer un mapping de la sphère sur que les trophee viendrait remplir ?
 
 Imaginer un algorithme de génération des formes plus flexibles permettant des résultats plus variés 
 
-## Interface
+### Implémentation
+
+une structure de classe aiderait beaucoup à clarifier le code.
+
+### Sortie
+
+Abscence des traverses sur le SVG
+
+### Interface
 
 Interface graphique et prévisualisation du résultat en 3D, en temps réel
 
 Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender, materials, présence des socles, ect...)
 
-## Documentation
+### Documentation
+
 Documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et l'efficacité de l'implémentation.
 
+De nombreuse algorigrammes et shémas pourrait simplifier la compréhension de l'algorithme.
 
-  
   
 
 
