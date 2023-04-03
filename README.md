@@ -37,7 +37,7 @@ Voici un exemple d'utilisation du programme, utilisant les description des laur�
 
 #### Entrée
 
-L'entrée est une liste de *string*, entrée par l'utilisateur dans l'invité de commande lors de l'éxécution du programme, ou alors définie dans la variable `descriptifs_projets` du fichier `Trophee_generator.py`.
+L'entrée est une liste de *string*, entrée par l'utilisateur dans l'invité de commande lors de l'éxécution du programme, ou alors définie dans la variable `descriptifs_projets` du fichier `Trophee_generator.py`. Par exemple, la liste des lauréats 2022 catégorie 'Données de la recherche'.
 
 ```
 Evolution des différents zonages de la troisième République
