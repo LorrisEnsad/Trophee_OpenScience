@@ -49,24 +49,12 @@ Prospection d’Amathonte, site archéologique de l’île de Chypre fouillé pa
 MouseTube, enregistrements de vocalisations de souris
 YAGO, base de connaissances
 ```
-
 #### Sortie
 
-#### Sortie
-
-![blender](https://user-images.githubusercontent.com/106762643/229172800-c11b3d97-d17b-4f35-87dd-5ebfa8c97bb7.png)
-
-
-![SVG_trophee_donnee_de_la_recherhce](https://user-images.githubusercontent.com/106762643/229146287-8bb658ad-0964-492f-a03f-125e13ec8a68.svg)
-
-
-#### Résultat
-![ex_2022](https://user-images.githubusercontent.com/106762643/229134182-b1b76b57-86cd-4383-b1bc-15f95383ce93.png)
-
-
-#### Résultat
-
-![](/run/media/lorris/3133-6132/LAN/OpenScience/ex_2022.png)
+Vous trouverez les sorties attendues dans le dossier `Exemple_Sortie`, à savoir : 
+* `Blender.png` image de préviusalisation en 3D de l'ensemble des trophées généré par Blender
+* `Trophee_2D_view.png` image de prévisualisation 2D des trophée
+* `Trophee_SVG.svg` fichier vectoriel des trophée utiles à leur production.
 
 ### Procédure d'éxécution
 
@@ -97,6 +85,14 @@ Il est nécessaire d'avoir installé au préalable :
 * S'assurer que `2D_view_generator.py` et `Trophee.txt` sont dans le même répertoire et éxécuter `python 2D_view_generator.py`.
   
   Sont générés les fichiers `Trophee_2D_view.png` et `Trophee_SVG.svg`
+  
+  Ou alors, entrer les commandes suivantes : 
+  ```
+  blender --background --python Trophee_generator.py
+  python 2D_view_generator.py
+  mv 2D_trophee_view.png Trophee_2D_view.png
+  mv SVG_trophee.svg Trophee_SVG.svg
+  ```
 
 # Structure du programme
 
