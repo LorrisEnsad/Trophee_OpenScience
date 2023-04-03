@@ -100,9 +100,8 @@ Cette première version du programme, bien qu'utilisée pour l'édition 2022 pri
 
 ### Algorithme
 
-La fonction récusrsive avec RNG. Comment faire autrement ? Imaginer un mapping de la sphère sur que les trophee viendrait remplir ?
-
-Imaginer un algorithme de génération des formes plus flexibles permettant des résultats plus variés 
+Une fonction récursive
+Imaginer un algorithme de génération des formes plus flexibles permettant des résultats plus variés. 
 
 ### Implémentation
 
@@ -111,21 +110,19 @@ L'écriture du fichier Trophee.txt s'arrêtes parfois sans raison, sortant un fi
 
 ### Sortie
 
-Les traverses seont absentes sur les fichiers de découpes générés. Elle doivent être rajoutée à la main, selon les directive donnée dans le PDf `
+Les traverses sont absentes sur les fichiers de découpe générés. Elle doivent être rajoutée à la main, selon les directive donnée dans le PDf `Process_A_a_Z.pdf`
 
 ### Interface
 
-Interface graphique et prévisualisation du résultat en 3D, en temps réel
+Une interface graphique et une prévisualisation du résultat en 3D en temps réel permettrait une manipulation facile des différents paramètres.
 
 Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender, materials, présence des socles, ect...)
 
 ### Documentation
 
-Documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et l'efficacité de l'implémentation.
+Une documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et l'efficacité de l'implémentation serait bienvenue pour faciliter son appropriation.
 
-De nombreuse algorigrammes et shémas pourrait simplifier la compréhension de l'algorithme.
 
-  
 # Structure du programme
 
 Programmé en python, le programme utilise Blender et son API Python, ainsi que les bibliothèques numpy, pygame et drawSVG. Il se décompose en deux sous-programme.
