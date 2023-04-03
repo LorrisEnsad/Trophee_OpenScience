@@ -94,6 +94,38 @@ Ou alors, entrer les commandes suivantes :
   mv SVG_trophee.svg Trophee_SVG.svg
   ```
 
+# Limites et pistes d'améliorations
+
+Cette première version du programme, bien qu'utilisée pour l'édition 2022 prix Ouvrir la Science, reste à l'état de protoptype. Elle contient donc de nombreuses limites. Nous vous invitons à en prendre connaissance avant toute utilisation.
+
+### Algorithme
+
+La fonction récusrsive avec RNG. Comment faire autrement ? Imaginer un mapping de la sphère sur que les trophee viendrait remplir ?
+
+Imaginer un algorithme de génération des formes plus flexibles permettant des résultats plus variés 
+
+### Implémentation
+
+une structure de classe aiderait beaucoup à clarifier le code, qui manque aussi de fiabilité.
+L'écriture du fichier Trophee.txt s'arrêtes parfois sans raison, sortant un ficher incomplet.
+
+### Sortie
+
+Les traverses seont absentes sur les fichiers de découpes générés. Elle doivent être rajoutée à la main, selon les directive donnée dans le PDf `
+
+### Interface
+
+Interface graphique et prévisualisation du résultat en 3D, en temps réel
+
+Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender, materials, présence des socles, ect...)
+
+### Documentation
+
+Documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et l'efficacité de l'implémentation.
+
+De nombreuse algorigrammes et shémas pourrait simplifier la compréhension de l'algorithme.
+
+  
 # Structure du programme
 
 Programmé en python, le programme utilise Blender et son API Python, ainsi que les bibliothèques numpy, pygame et drawSVG. Il se décompose en deux sous-programme.
@@ -127,37 +159,5 @@ Le trophée est d'abord généré sur un plan. Par définition, $n$ et $o$ sont 
 ## Format d'exportation des trophées
 
 ## Préparation du fichier SVG de découpe
-
-# Limites et pistes d'améliorations
-
-Cette première version du programme, bien qu'utilisée pour l'édition 2022 prix Ouvrir la Science, reste à l'état de protoptype. Elle contient donc de nombreuses limites. Nous vous invitons à en prendre connaissance avant toute utilisation.
-
-### Algorithme
-
-La fonction récusrsive avec RNG. Comment faire autrement ? Imaginer un mapping de la sphère sur que les trophee viendrait remplir ?
-
-Imaginer un algorithme de génération des formes plus flexibles permettant des résultats plus variés 
-
-### Implémentation
-
-une structure de classe aiderait beaucoup à clarifier le code.
-
-### Sortie
-
-Abscence des traverses sur le SVG
-
-### Interface
-
-Interface graphique et prévisualisation du résultat en 3D, en temps réel
-
-Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender, materials, présence des socles, ect...)
-
-### Documentation
-
-Documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et l'efficacité de l'implémentation.
-
-De nombreuse algorigrammes et shémas pourrait simplifier la compréhension de l'algorithme.
-
-  
 
 
