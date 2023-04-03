@@ -68,11 +68,7 @@ YAGO, base de connaissances
 
 ![](/run/media/lorris/3133-6132/LAN/OpenScience/ex_2022.png)
 
-### Linux
-
-Il exsite une version *pseudo compilée* (*pseudo* puisque si certaines parties sont effectivement compilée, d'autre sont interprétées depuis l'environnement python lié à la version portable de Blender, incluse). 
-
-### Windows et MacOS
+### Procédure d'éxécution
 
 #### Pré-requis logiciel
 
