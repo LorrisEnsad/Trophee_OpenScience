@@ -86,7 +86,7 @@ Il est nécessaire d'avoir installé au préalable :
   
   Sont générés les fichiers `Trophee_2D_view.png` et `Trophee_SVG.svg`
   
-  Ou alors, entrer les commandes suivantes : 
+Ou alors, entrer les commandes suivantes : 
   ```
   blender --background --python Trophee_generator.py
   python 2D_view_generator.py
