@@ -1,3 +1,8 @@
+# Programme effectue dans le cadre de la fabrication des trophee du prix Open Science 2022 
+# par l'ENSAD et ses etudiant.es Rose Vidal, Alix Nadeau, Lorris Sahli et Hugo Bijaoui.
+# Sous programme No. 1 : Generation des formes a partir des intitules
+# Envirennement d'execution : Python 3
+
 import os
 import math
 from math import pi
