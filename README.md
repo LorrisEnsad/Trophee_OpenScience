@@ -1,4 +1,4 @@
-# Ouvrir la Science
+# Trophées ouvrir la Science
 
 Le projet Ouvrir la Science est un prix à l'initiative  du Ministère de l'Enseignement Supérieur et de la Recherche. Il consiste à récompenser les chercheur·euses français·es qui publient librement leurs outils numérique.  Pour sa première édition,  les trophées remis aux lauréats on été conçus par quatre étudiant·es de l'école des Arts Décoratifs de Paris :  Alix Nadeau, Lorris Sahli, Rose Vidal et Hugo Bijaoui.
 
