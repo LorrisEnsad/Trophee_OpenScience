@@ -10,7 +10,8 @@ Ce document `Readme.md` concerne la dimension numérique du trophée et le déta
 
 Le fichier `Process_A_a_Z.pdf` présent sur le répertoire se concentre sur la fabrcation plastique des trophées. Nous vous invitons à le consulter pour tout renseignements sur cet aspect de la récompense.
 
-![doc_schematic](https://user-images.githubusercontent.com/91726252/229767086-7c148c9e-bc11-4433-b29e-442f4258251b.png)
+![doc_schematic](https://user-images.githubusercontent.com/91726252/229767439-15274b76-7629-405d-8ef8-0d283c0d15f1.png)
+
 
 ## Le programme
 
