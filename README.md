@@ -152,10 +152,10 @@ Les longeur de chaque segments de chaque branche sont généré à partir d'un a
 
 Le trophée est d'abord généré sur un plan. Par définition, $n$ et $o$ sont prédéterminés pour chaque branche. 
 
-## Préparation à la prévisualisation 3D
+### Préparation à la prévisualisation 3D
 
-## Format d'exportation des trophées
+### Format d'exportation des trophées
 
-## Préparation du fichier SVG de découpe
+### Préparation du fichier SVG de découpe
 
 
