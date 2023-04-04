@@ -4,12 +4,13 @@ Le projet Ouvrir la Science est un prix à l'initiative  du Ministère de l'Ense
 
 https://user-images.githubusercontent.com/106762643/228660883-8d30bfee-2681-4922-8bea-3df94b5a8ea7.mp4
 
-
 Cette documentation concerne l'élaboration et la fabrication des trophées de ce prix. 
 
 Ce document `Readme.md` concerne la dimension numérique du trophée et le détail des programme nécessaire à sa conception. 
 
 Le fichier `Process_A_a_Z.pdf` présent sur le répertoire se concentre sur la fabrcation plastique des trophées. Nous vous invitons à le consulter pour tout renseignements sur cet aspect de la récompense.
+
+![doc_schematic](https://user-images.githubusercontent.com/91726252/229767086-7c148c9e-bc11-4433-b29e-442f4258251b.png)
 
 ## Le programme
 
