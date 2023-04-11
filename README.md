@@ -2,7 +2,8 @@
 
 Le projet Ouvrir la Science est un prix à l'initiative  du Ministère de l'Enseignement Supérieur et de la Recherche. Il consiste à récompenser les chercheur·euses français·es qui publient librement leurs outils numérique.  Pour sa première édition,  les trophées remis aux lauréats on été conçus par quatre étudiant·es de l'école des Arts Décoratifs de Paris :  Alix Nadeau, Lorris Sahli, Rose Vidal et Hugo Bijaoui.
 
-https://user-images.githubusercontent.com/106762643/228660883-8d30bfee-2681-4922-8bea-3df94b5a8ea7.mp4
+
+[![Watch the video](https://user-images.githubusercontent.com/106762643/231217574-463a84da-b54f-4b13-bfcb-1ffab2c61980.png)](https://user-images.githubusercontent.com/106762643/228660883-8d30bfee-2681-4922-8bea-3df94b5a8ea7.mp4)
 
 Cette documentation concerne l'élaboration et la fabrication des trophées de ce prix. 
 
@@ -15,6 +16,8 @@ Le fichier `Process_A_a_Z.pdf` présent sur le répertoire se concentre sur la f
 
 L'objectif de ce programme est de générer une sphère composée $n$ éléments à partir de $n$ *string*s (chaînes de caractères), ainsi que des fichiers aidant à sa fabrication. 
 ![doc_schematic](https://user-images.githubusercontent.com/91726252/229767439-15274b76-7629-405d-8ef8-0d283c0d15f1.png)
+
+
 
 #### Cahier des charges
 
