@@ -101,23 +101,25 @@ Cette première version du programme, bien qu'utilisée pour l'édition 2022 pri
 
 ### Algorithme
 
-Une fonction récursive
-Imaginer un algorithme de génération des formes plus flexibles permettant des résultats plus variés. 
+`Trophee_generator.py`contient une fonction récursive dont la condition de sortie est dépendante de génération de nombre aléatoire. Par conséquent, il est possible que selon l'entrée, le programme s'arrête si la profondeur maximale admise par Python est atteinte. Un workaround consiste à changer légèrement l'entrée (en rajoutant des espaces à la fin par exemple) jusqu'à ce que le programme s'éxécute entièrement. 
+De plus, les tests de collision entre les branches sont effectué avant leur projection dans l'espace. L'approximation est efficace et simplifie beaucoup le calcule, mais il arrive que dans certains cas limites, les formes se chevauchent une fois projetés. Il faut alors, ou les retoucher à la main, ou changer les paramètre de l'algorithme pour augmenter les marges (plus elles sont petites, plus les résultats peuvent être différents, mais plus les chances que des branches se chevauchent sont grandes; il faut donc trouver un compromis). 
+EN conclusion, Il serait nécessaire d'imaginer un algorithme de génération des formes plus flexible et plus fiable permettant des résultats plus variés (faire les tests de collision sur les formes projetés [nécessite un maillage de la sphère ? Renoncer à une solution analytique ? Au prix de quelle performance ?]). 
 
 ### Implémentation
 
-une structure de classe aiderait beaucoup à clarifier le code, qui manque aussi de fiabilité.
-L'écriture du fichier Trophee.txt s'arrêtes parfois sans raison, sortant un ficher incomplet.
+Une structure de classe aiderait beaucoup à clarifier le code, qui manque aussi de fiabilité.
+L'écriture du fichier Trophee.txt s'arrêtes parfois sans raison, sortant un ficher incomplet (conditions de réplicabilité du bug inconnues).
 
 ### Sortie
 
-Les traverses sont absentes sur les fichiers de découpe générés. Elle doivent être rajoutée à la main, selon les directive donnée dans le PDf `Process_A_a_Z.pdf`
+Les traverses sont absentes sur les fichiers de découpe générés. Elle doivent être rajoutée à la main, selon les directive donnée dans le PDf `Process_A_a_Z.pdf`.
+On pourrait imaginer leur automatisation, ce qui compliquerait beaucoup le pogramme de construction du fichier .SVG, alors même que l'ajout manuel des traverses est assez rapide (mais doit être répété sur chaque trophée). 
 
 ### Interface
 
 Une interface graphique et une prévisualisation du résultat en 3D en temps réel permettrait une manipulation facile des différents paramètres.
 
-Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender, materials, présence des socles, ect...)
+Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender [notamment les chemins], materials, présence des socles, ect...)
 
 ### Documentation
 
