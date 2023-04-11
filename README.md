@@ -108,8 +108,8 @@ En conclusion, Il serait nécessaire d'imaginer un algorithme de génération de
 
 ### Implémentation
 
-Une structure de classe aiderait beaucoup à clarifier le code, qui manque aussi de fiabilité.
-L'écriture du fichier Trophee.txt s'arrêtes parfois sans raison, sortant un ficher incomplet (conditions de réplicabilité du bug inconnues).
+* Une structure de classe aiderait beaucoup à clarifier le code, qui manque aussi de fiabilité.
+* L'écriture du fichier Trophee.txt s'arrêtes parfois sans raison, sortant un ficher incomplet (conditions de réplicabilité du bug inconnues).
 
 ### Sortie
 
