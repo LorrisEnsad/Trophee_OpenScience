@@ -116,8 +116,8 @@ En conclusion, Il serait nécessaire d'imaginer un algorithme de génération de
 
 ### Sortie
 
-Les traverses sont absentes sur les fichiers de découpe générés. Elle doivent être rajoutée à la main, selon les directive donnée dans le PDf `Process_A_a_Z.pdf`.
-On pourrait imaginer leur automatisation, ce qui compliquerait beaucoup le pogramme de construction du fichier .SVG, alors même que l'ajout manuel des traverses est assez rapide (mais doit être répété sur chaque trophée). 
+Les traverses sont absentes sur les fichiers de découpe générés. Elles doivent être rajoutées à la main, selon les directives données dans le PDf `Process_A_a_Z.pdf`.
+Si on pourrait imaginer leur automatisation, cela compliquerait beaucoup le pogramme de construction du fichier .SVG, alors même que l'ajout manuel des traverses est assez rapide (mais doit être répété sur chaque trophée). 
 
 ### Interface
 
