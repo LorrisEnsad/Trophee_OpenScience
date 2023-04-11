@@ -118,9 +118,9 @@ On pourrait imaginer leur automatisation, ce qui compliquerait beaucoup le pogra
 
 ### Interface
 
-Une interface graphique et une prévisualisation du résultat en 3D en temps réel permettrait une manipulation facile des différents paramètres.
+* Une interface graphique et une prévisualisation du résultat en 3D en temps réel permettrait une manipulation facile des différents paramètres.
 
-Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender [notamment les chemins], materials, présence des socles, ect...)
+* Améliorer la construction du modèle 3D de prévisualisation (meilleur utilisation de l'API Blender [notamment les chemins], materials, présence des socles, ect...)
 
 ### Documentation
 
