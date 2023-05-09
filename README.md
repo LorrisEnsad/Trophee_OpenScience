@@ -16,7 +16,7 @@ Le fichier `Process_A_a_Z.pdf` présent sur le répertoire se concentre sur la f
 
 L'objectif de ce programme est de générer une sphère composée $n$ éléments à partir de $n$ *string*s (chaînes de caractères), ainsi que des fichiers aidant à sa fabrication. 
 ![doc_schematic](https://user-images.githubusercontent.com/91726252/229767439-15274b76-7629-405d-8ef8-0d283c0d15f1.png#gh-light-mode-only)
-![shema_noir](https://github.com/LorrisEnsad/Trophee_OpenScience/assets/106762643/df81c840-4125-43d9-b3c3-68657c689959)
+![shema_noir](https://github.com/LorrisEnsad/Trophee_OpenScience/assets/106762643/df81c840-4125-43d9-b3c3-68657c689959#gh-dark-mode-only)
 
 
 
