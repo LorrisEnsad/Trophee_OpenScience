@@ -128,4 +128,4 @@ Si on pourrait imaginer leur automatisation, cela compliquerait beaucoup le pogr
 
 ### Documentation
 
-Une documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et le fonctionnement l'implémentation serait bienvenue pour faciliter son appropriation.
+Une documentation plus précise des paramètres du programme, qui conditionnent à la fois l'esthétique du résultat et le fonctionnement du programme  serait bienvenue pour faciliter son appropriation.
